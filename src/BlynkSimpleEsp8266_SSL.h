@@ -191,7 +191,7 @@ public:
 
 static WiFiClientSecure _blynkWifiClient;
 static BlynkArduinoClientSecure<WiFiClientSecure> _blynkTransport(_blynkWifiClient);
-BlynkWifi<BlynkArduinoClientSecure<WiFiClientSecure> > Blynk(_blynkTransport);
+extern BlynkWifi<BlynkArduinoClientSecure<WiFiClientSecure> > Blynk;
 
 #include <BlynkWidgets.h>
 
